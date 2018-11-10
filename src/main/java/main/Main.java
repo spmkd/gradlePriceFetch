@@ -1,6 +1,5 @@
 package main;
 
-import com.sun.media.jfxmedia.logging.Logger;
 import functions.db.ProcessTop25;
 import functions.FetchHTML;
 import functions.GenerateTop25;
