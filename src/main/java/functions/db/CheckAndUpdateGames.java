@@ -52,6 +52,9 @@ public class CheckAndUpdateGames {
                 try(PreparedStatement statement = con.prepareStatement(insertSQL)){
                     statement.setString(1, singleGame.getName());
                     statement.executeUpdate();
+                }catch (SQLException ex) {
+                    logger.error(singleGame.getName());
+                    logger.error(ex.getMessage(),ex);
                 }
             }
 
